@@ -80,7 +80,6 @@ button {
   align-items: center;
 }
 .logo {
-  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -91,6 +90,7 @@ button {
 }
 .header-logo-second {
   color: var(--main-color-text);
+  margin-right: 76px;
 }
 .header-list {
   display: flex;
@@ -128,13 +128,11 @@ button {
 }
 
 /* ==================FOOTER================*/
-.page-footer-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .footer {
   background: var(--main-color-backgrond-dark);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo-second {
   font-weight: 800;
@@ -145,18 +143,16 @@ button {
   color: var(--second-color-background-light);
 }
 .footer-container {
-  margin-top: 102px;
-  margin-bottom: 100px;
 }
 .footer-link {
 }
 .footer-text {
-  width: 264px;
-  padding-top: 18px;
+  margin-top: 18px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-color-background-light);
+  width: 264px;
 }
 
 /*-------------------HERO-------------*/
@@ -181,7 +177,8 @@ button {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  border-color: transparent;
+  border-radius: 4px;
+  border: none;
   padding: 16px 32px 16px 32px;
   font-family: inherit;
   font-weight: 500;
@@ -207,8 +204,13 @@ button {
 .basis-item:not(:last-child) {
   margin-right: 24px;
 }
+
+.basis-item {
+  width: calc((100%-72) / 4);
+}
+
 .basis-mini-title {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -224,9 +226,10 @@ button {
 
 /*-------------------WORK-------------*/
 .work {
+  padding-bottom: 120px;
 }
 .work-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -252,7 +255,7 @@ button {
   background-color: var(--second-color-background-light);
 }
 .team-main-title {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -279,8 +282,7 @@ button {
   height: auto;
 }
 .team-second-title {
-  padding-bottom: 8px;
-  padding-top: 32px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -290,13 +292,15 @@ button {
   background-color: var(--main-color-bacground-light);
 }
 .team-text {
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--second-color-text);
   background-color: var(--main-color-background-light);
+}
+.our-team {
+  padding: 32px 16px 32px 16px;
 }
 
 /*=================================================PORTFOLIO=============================================*/
@@ -307,8 +311,7 @@ button {
 .control-panel-title {
 }
 .control-panel-list {
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   display: flex;
   justify-content: center;
 }
@@ -338,30 +341,28 @@ button {
 /*----------------------Gallery------------------*/
 .gallery {
 }
+
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 48px 24px;
   justify-content: center;
+
   padding-bottom: 120px;
 }
-.gallery-container :not(:nth-last-child(-n + 3)) {
-  margin-bottom: 48px;
+.gallery-container {
 }
+
 .gallery-item {
-  border: 1px solid #e7e9fc;
-  width: 360px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 .gallery-img {
-  flex-basis: calc((100%-48) / 3);
   display: block;
   max-width: 100%;
   height: auto;
 }
 .gallery-title {
-  padding-left: 16px;
-  padding-top: 32px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -369,10 +370,16 @@ button {
   color: var(--main-color-text);
 }
 .gallery-text {
-  padding-bottom: 32px;
-  padding-left: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--second-color-text);
+}
+.gallery-border {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
