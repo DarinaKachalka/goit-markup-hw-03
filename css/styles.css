@@ -143,6 +143,8 @@ button {
   color: var(--second-color-background-light);
 }
 .footer-container {
+  width: 264px;
+  margin-left: 56px;
 }
 .footer-link {
 }
@@ -307,6 +309,8 @@ button {
 /*---------------------Control Panel------------*/
 
 .control-panel {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .control-panel-title {
 }
@@ -347,8 +351,6 @@ button {
   flex-wrap: wrap;
   gap: 48px 24px;
   justify-content: center;
-
-  padding-bottom: 120px;
 }
 .gallery-container {
 }
